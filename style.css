@@ -148,7 +148,9 @@ margin: 0;
   border-bottom-left-radius:2%;
   border-bottom-right-radius:2%;
   width: 80vw;
+  width: calc(var(--vw, 1vw) * 80);
   height: 40vw;
+  height: calc(var(--vw, 1vw) * 40);
   overflow: hidden;
   text-align:center;
   margin: 2vw auto;
@@ -158,12 +160,6 @@ margin: 0;
 .newscard img{
   width: 80vw;
   height: 24vw;
-}
-
-/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
-  transition: margin-left .5s;
-  padding: 20px;
 }
 
 
