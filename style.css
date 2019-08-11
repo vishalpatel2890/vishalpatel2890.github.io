@@ -21,12 +21,20 @@ margin: 0;
   float: left;
 }
 
-.newsfeed{
+.hamburger{
+  display: none;
+}
+
+#newsfeed{
   display: inline-block;
   width: 40%;
   height: 90%;
   float: right;
-  overflow-y: scroll;"
+  overflow-y: scroll;
+}
+
+.newsfeed .closebtn {
+  display: none;
 }
 
 
@@ -41,6 +49,8 @@ margin: 0;
   margin: 2vw auto;
   font-size: 1vw;
 }
+
+
 
 @media screen and (max-width: 768px) {
 .logo {
@@ -54,24 +64,87 @@ margin: 0;
     float: left;
   }
 
-.newsfeed{
-  display: none;
-  width: 40%;
+.hamburger{
+  display: inline-block;
+  width: 10%;
   height: 90%;
   float: right;
-  overflow-y: scroll;"
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+  margin: auto;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.newsfeed {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.newsfeed .closebtn {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The navigation menu links */
+.newsfeed a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.newsfeed a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
 }
 
 
-.newscard {
-  background: rgba(255, 255, 255, 0.8);
-  border-bottom-left-radius:2%;
-  border-bottom-right-radius:2%;
-  width: 30vw;
-  height: 20vw;
-  overflow: hidden;
-  text-align:center;
-  margin: 2vw auto;
-  font-size: 1vw;
-}
+
+
 }
