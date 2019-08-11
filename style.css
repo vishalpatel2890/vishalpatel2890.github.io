@@ -42,6 +42,7 @@ margin: 0;
 
 
 .newscard {
+  display: block;
   background: rgba(255, 255, 255, 0.8);
   border-bottom-left-radius:2%;
   border-bottom-right-radius:2%;
@@ -57,7 +58,6 @@ margin: 0;
   width: 30vw;
   height: 12vw;
 }
-
 
 
 @media screen and (max-width: 425px) {
