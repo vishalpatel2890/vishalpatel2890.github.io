@@ -161,7 +161,7 @@ margin: 0;
     width: 80vw;
     width: calc(var(--vw, 1vw) * 80);
     height: 40vw;
-    height: calc(var(--vw, 1vw) * 32);
+    height: calc(var(--vw, 1vw) * 40);
     overflow: hidden;
     text-align:center;
     margin: 2vw auto;
