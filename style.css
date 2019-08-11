@@ -31,6 +31,9 @@ margin: 0;
   height: 90%;
   float: right;
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  box-sizing: border-box;
+
 }
 
 .newsfeed .closebtn {
