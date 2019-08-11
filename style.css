@@ -2,12 +2,23 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 
+
 html,body { height: 100%;
 background: rgba(119, 126, 255,100);
 margin: 0;
 }
 * {
 	font-family: 'Lato','Helvetica Neue', Arial, sans-serif;
+}
+.logo {
+  width: 30vw;
+  height: 13vh
+}
+
+.chatbot {
+  width: 60%;
+  height: 90%;
+  float: left;
 }
 
 .newsfeed{
@@ -29,4 +40,38 @@ margin: 0;
   text-align:center;
   margin: 2vw auto;
   font-size: 1vw;
+}
+
+@media screen and (max-width: 768px) {
+.logo {
+  width: 55vw;
+  height: 12vh
+}
+
+.chatbot {
+    width: 90%;
+    height: 90%;
+    float: left;
+  }
+
+.newsfeed{
+  display: none;
+  width: 40%;
+  height: 90%;
+  float: right;
+  overflow-y: scroll;"
+}
+
+
+.newscard {
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom-left-radius:2%;
+  border-bottom-right-radius:2%;
+  width: 30vw;
+  height: 20vw;
+  overflow: hidden;
+  text-align:center;
+  margin: 2vw auto;
+  font-size: 1vw;
+}
 }
