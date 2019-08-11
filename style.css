@@ -62,10 +62,6 @@ margin: 0;
     width: 80vw;
   }
 
-  #parent {
-    margin: -60px;
-  }
-
   .chatbot {
       width: 90%;
       height: calc(var(--vh, 1vh) * 90);
