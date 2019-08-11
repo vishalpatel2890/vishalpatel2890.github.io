@@ -54,8 +54,7 @@ margin: 0;
 
 @media screen and (max-width: 768px) {
 .logo {
-  width: 55vw;
-  height: 12vh
+  width: 80vw;
 }
 
 .chatbot {
