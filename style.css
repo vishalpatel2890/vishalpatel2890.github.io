@@ -107,6 +107,7 @@ margin: 0;
 
 .newsfeed {
   height: 100%; /* 100% Full-height */
+  height: calc(var(--vw, 1vw) * 100);
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
@@ -115,7 +116,6 @@ margin: 0;
   background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
-  padding-bottom: 10vw;
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
