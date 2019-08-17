@@ -170,6 +170,7 @@ margin: 0;
     text-align:center;
     margin: 2vw auto;
     font-size: 2vw;
+		font-size: calc(var(--vw, 1vw) * 3)
   }
 
   .newscard img{
