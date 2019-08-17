@@ -174,7 +174,8 @@ margin: 0;
   }
 
 	.newscard h2 {
-		font-size: calc(var(--vw, 1vw) * 2)
+		font-size: calc(var(--vw, 1vw) * 2);
+		margin: 0
 	}
 
   .newscard img{
