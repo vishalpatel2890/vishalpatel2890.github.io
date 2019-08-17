@@ -173,6 +173,10 @@ margin: 0;
 		font-size: calc(var(--vw, 1vw) * 3)
   }
 
+	.newscard h2 {
+		font-size: calc(var(--vw, 1vw) * 2)
+	}
+
   .newscard img{
     width: 80vw;
     height: 24vw;
